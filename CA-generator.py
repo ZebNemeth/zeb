@@ -14,7 +14,7 @@ import random
 from PIL import Image
 import time
 
-beginCPUCycle = time.clock() # om efficientere code te testen
+beginCPUCycle = time.time() # om efficientere code te testen
 
 
 
@@ -112,6 +112,6 @@ def GenerateImage(ruleWolframCode, density, imageWidth, imageHeight):
 
    imgCA.show()
 
-GenerateImage(110,.5,960,540)
+GenerateImage(110,.5,1000,1000)
 
-print ( time.clock() - beginCPUCycle )
+print ( time.time() - beginCPUCycle )
