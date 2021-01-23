@@ -57,7 +57,7 @@ for i in range (steps):
 
 # ---- 1.4 ----
 # ---- Question 1.4.3 ----
-wantToKnowTheAnswerToThisQuestion = False
+wantToComputeTheAnswerToThisQuestion = False
 
 nIterations = 10000000
 startInterval = 2.99999
@@ -65,7 +65,7 @@ endInterval = 3.00001
 steps = 9
 stepSize = (endInterval - startInterval) / (steps-1)
 
-if wantToKnowTheAnswerToThisQuestion :
+if wantToComputeTheAnswerToThisQuestion :
     print ( "r- value does this qua difference between steps in the limit of iterations: ")
     for i in range (steps):
         print ( "R: " +str(startInterval + i*stepSize) +", limit difference: ", logistic( .5, startInterval + i*stepSize, nIterations) - logistic( .5, startInterval + i*stepSize, nIterations+1)  )
