@@ -34,5 +34,6 @@ for real in range( minRe, maxRe, resolutionStep ):
             z = c
             for i in range( nIterations ):
                 z = iterate( z, c, expo )
-                if abs(z) 
+                if abs(z) :
+                    break
             
